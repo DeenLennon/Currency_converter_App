@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="currency_container">
+            <select id="currency_first">
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="GHS">GHS</option>
+                <option value="INR">INR</option>
+                <option value="JPY">JPY</option>
+                <option value="KWD">KWD</option>
+                <option value="NGN">NGN</option>
+                <option value="USD" selected>USD</option>
+            </select>
+            <input type="number" id="worth_first" value="1" min="0">
+        </div>
+        <div class="currency_container">
+            <select id="currency_second">
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="GHS">GHS</option>
+                <option value="INR">INR</option>
+                <option value="JPY">JPY</option>
+                <option value="KWD">KWD</option>
+                <option value="NGN" selected>NGN</option>
+                <option value="USD">USD</option>
+            </select>
+            <input type="number" id="worth_second" disabled>
+        </div>
+        <p class="exchange_rate" id="exchange_rate"></p>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
