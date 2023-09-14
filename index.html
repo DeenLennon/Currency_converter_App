@@ -10,34 +10,40 @@
     <div class="container">
         <h1>Currency Converter</h1>
         <div class="currency_container">
-            <select id="currency_first">
-                <option value="AUD">AUD</option>
-                <option value="CAD">CAD</option>
-                <option value="EUR">EUR</option>
-                <option value="GBP">GBP</option>
-                <option value="GHS">GHS</option>
-                <option value="INR">INR</option>
-                <option value="JPY">JPY</option>
-                <option value="KWD">KWD</option>
-                <option value="NGN">NGN</option>
-                <option value="USD" selected>USD</option>
+            <select id="currency">
+                <option value="EUR">&#8364; EUR</option>
+                <option value="GBP">&#163; GBP</option>
+                <option value="GHS">&#8373; GHS</option>
+                <option value="INR">&#8377; INR</option>
+                <option value="JPY">&#165; JPY</option>
+                <option value="RUB">&#1073; RUB</option>
+                <option value="KWD">&#1583; KWD</option>
+                <option value="NGN">&#8358; NGN</option>
+                <option value="AUD">&#36; AUD</option>
+                <option value="CAD">&#36; CAD</option>
+                <option value="QAR">&#65020; QAR</option>
+                <option value="EGP">&#163; EGP</option>
+                <option value="USD" selected>&#x24; USD</option>
             </select>
-            <input type="number" id="worth_first" value="1" min="0">
+            <input type="number" id="amount" value="1" min="0">
         </div>
         <div class="currency_container">
-            <select id="currency_second">
-                <option value="AUD">AUD</option>
-                <option value="CAD">CAD</option>
-                <option value="EUR">EUR</option>
-                <option value="GBP">GBP</option>
-                <option value="GHS">GHS</option>
-                <option value="INR">INR</option>
-                <option value="JPY">JPY</option>
-                <option value="KWD">KWD</option>
-                <option value="NGN" selected>NGN</option>
-                <option value="USD">USD</option>
+            <select id="other_currency">
+                <option value="GHS">&#8373; GHS</option>
+                <option value="AUD">&#36; AUD</option>
+                <option value="EUR">&#8364; EUR</option>
+                <option value="CAD">&#36; CAD</option>
+                <option value="GBP">&#163; GBP</option>
+                <option value="INR">&#8377; INR</option>
+                <option value="JPY">&#165; JPY</option>
+                <option value="EGP">&#163; EGP</option>
+                <option value="RUB">&#1073; RUB</option>
+                <option value="QAR">&#65020; QAR</option>
+                <option value="KWD">&#1583; KWD</option>
+                <option value="NGN" selected>&#8358; NGN</option>
+                <option value="USD">&#x24; USD</option>
             </select>
-            <input type="number" id="worth_second" disabled>
+            <input type="number" id="worth" disabled>
         </div>
         <p class="exchange_rate" id="exchange_rate"></p>
     </div>
