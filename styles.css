@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: blueviolet;
+    background-color: rgb(36, 0, 0);
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -10,10 +10,12 @@ body {
 }
 
 .container {
-    background-color: darkcyan;
+    background:linear-gradient(to top, rgba(54, 38, 22, 0.8)50%,rgba(54, 38, 22, 0.8)50%);
+    height: 380px;
     color: aliceblue;
+    box-shadow: rgba(0, 0, 0, .9);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 20px 0;
     text-align: center;
 }
 
@@ -25,11 +27,16 @@ body {
 
 .currency_container select {
     padding: 10px;
+    border: none;
+    background-color: #368083;
+    color: #fff;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .currency_container input {
     border: 0;
     background: transparent;
+    border-bottom: 2px solid #240000;
     font-size: 25px;
     text-align: right;
     color: aliceblue;
@@ -42,4 +49,5 @@ body {
 
 select:focus, input:focus {
     outline: none;
+    color: #240000;
 }
